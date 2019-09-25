@@ -1,0 +1,7 @@
+#!/usr/local/bin/zsh
+
+while true; do
+    # osascript ~/Applications/mfa-autoclick.scpt >> ~/Desktop/out.txt
+    cat ~/bin/mfa-click.txt | osascript - args >> ~/Desktop/out.txt
+    sleep 1
+done
